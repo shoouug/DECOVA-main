@@ -1,0 +1,309 @@
+*{
+  font-family: 'Times New Roman', Times, serif; 
+}
+
+
+#DesignerHomepage {
+    display: flex;
+    flex-direction: column; /* Change the flex direction to column ------------------------------*/
+  
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:rgba(255, 250, 240, 0.432);
+  }
+
+  .header2 , #welH{
+    font-family: 'Times New Roman', Times, serif; 
+    color:#754444;
+    text-shadow: .2em .2em .3em silver;
+    
+  }
+
+
+  
+  table{
+   text-align: center; 
+  }
+
+
+  #tabels {
+    position: relative;
+    top: 50px; /* Adjust the value as needed */ 
+}
+
+
+.proImg{
+width: 180px;
+height: 100px;
+}
+
+
+
+
+#firstTContent{
+    position: relative;
+    top: 20px; /* Adjust the value as needed */
+}
+
+
+
+
+#secondTContent{
+    position: relative;
+    top: 70px; /* Adjust the value as needed */
+}
+
+
+
+
+
+
+  #firstT{
+    width: 1050px; 
+    height: auto;
+margin-top: 20px;
+      
+  }
+
+
+  #secondT{
+position: relative;
+top: 20px;
+    width: 1200px; 
+    height: auto;
+}
+  
+  
+  
+  #infoBox {
+    border-radius: 5px;
+    box-shadow: 0 0 18px rgb(192, 192, 192);
+
+
+    /* for the border*/
+    background-color: rgb(241, 239, 237);
+    border: 3px solid transparent; /* Set a transparent border */
+    border-image: linear-gradient(to right, rgba(108, 143, 122, 0), rgba(192, 192, 192, 0.255), rgba(108, 143, 122, 0)); /* Apply a gradient for the border */
+    border-image-slice: 1; /* Ensure the entire border is used for the gradient */
+  
+    /*------------------------------------*/
+position: relative;
+top: 18px;
+
+
+    width: 70%;
+    height:100px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+
+    line-height: 1.5em;
+    font-size: 16px;
+  }
+
+
+  #infoBox p{
+  margin-left: 20px;
+  margin-top: 10px;
+  text-shadow: .1em .1em .15em silver;
+
+
+
+
+  }
+
+
+  .infoTitle{
+  font-weight: bolder;
+  color: rgba(61, 79, 77, 0.7);
+  }
+
+
+  .infoInputs{
+    color: rgba(144, 130, 61 , 1); 
+  }
+  
+  #welH{
+    position: relative;
+    top: 18%;
+    right: 420px;
+    color: rgba(61, 79, 77, 1);
+    font-size: 22px;
+    text-shadow: .2em .2em .15em silver;
+  }
+
+  .leftH,
+  .rightLink {
+    display: inline-block;
+  }
+
+
+  #AddLink{
+    margin-right: 40px;
+
+
+  }
+  
+  .rightLink {
+    float: right;
+    margin-top: 30px;
+  }
+  
+  
+  
+  
+  td {
+    padding: 8px;
+    background-color: rgb(241, 239, 237);
+    box-shadow: .2em .2em .3em silver;;
+
+
+  }
+  
+  .no-bg {
+    background-color: transparent !important;
+  }
+
+
+
+
+  #firstT th:nth-child(1), #firstT td:nth-child(1), #firstT th:nth-child(3), #firstT td:nth-child(3) {
+    width: 120px; 
+  }
+
+
+  #firstT th:nth-child(2), #firstT td:nth-child(2) {
+    width: 200px; 
+  }
+
+
+  #firstT th:nth-child(4), #firstT td:nth-child(4) {
+    width: 260px; 
+  }
+
+
+  #firstT th:nth-child(5), #firstT td:nth-child(5) , #firstT th:nth-child(6), #firstT td:nth-child(6) {
+    width: 80px;
+    box-shadow: none;
+  }
+
+
+
+
+  #secondT th,#secondT td {
+    width: 120px; 
+  }
+
+
+  #secondT th:nth-child(7), #secondT td:nth-child(7) , #secondT th:nth-child(8), #secondT td:nth-child(8) {
+    width: 80px; 
+    box-shadow: none;
+  }
+
+
+
+
+  /*
+  #firstT td:nth-child(4) {
+  text-align: justify;
+  }
+  */
+
+
+
+
+  
+  .tlink {
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgb(192, 192, 192);
+
+
+    /* for the border*/
+    background-color: rgba(220, 214, 210, 0.7);
+    border: 3px solid transparent; /* Set a transparent border */
+    border-image: linear-gradient(to right, rgba(108, 143, 122, 0), rgba(0, 0, 0, 0.255), rgba(108, 143, 122, 0)); /* Apply a gradient for the border */
+    border-image-slice: 1; /* Ensure the entire border is used for the gradient */
+  }
+
+
+
+  #firstT .tlink{
+    width: 80px;
+    height: 35px;
+  }
+
+
+  #secondT .tlink{
+    width: 100px;
+    height: 40px;
+    font-size: smaller;
+  }
+
+  
+  .tlink,
+  .thS {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .thS {
+    background-color: rgb(220, 214, 210);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 25px;
+    color: rgb(144, 130, 61 , 0.8); 
+    text-shadow: .2em .2em .15em silver;
+    font-size: 17px;
+  }
+  
+  caption {
+    float: left;
+    margin-bottom: -2%;
+    font-size: 25px;
+  }
+  
+  #tableMarg {
+    margin-top: 20px;
+  }
+
+
+
+
+.flix .rightLink,
+#tabels .rightLink,
+#firstTContent .tlink a,
+#secondTContent .tlink a, #addNewaLink {
+    /* Your shared styles for all links here */
+    color: #3D4F4D;
+    text-shadow: .2em .2em .15em silver;
+    /* Additional styles as needed */
+}
+
+
+
+
+
+
+#addNewaLink{
+float: right;
+}
+
+
+a:hover {
+
+
+}
+
+
+#brandLogoImge{
+  float: right;
+  position: relative;
+  bottom: 70px;
+  right: 20px;
+  width: 80PX;
+  height: 80PX;
+}

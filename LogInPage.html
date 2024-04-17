@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <link rel="stylesheet" href="css/Homepage.css">
+    <!--<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <img src="images/logo1.png" alt="Logo" width="150" height="100">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</header>
+
+<body>
+    <p class="S2">Log in</p>
+    <div class="S3">
+        <form id="clientForm" >
+            <fieldset>
+                <label><input type="email" name="email" class="S4" placeholder="Email Address" required></label><br>
+                <label><input type="password" name="password" class="S4" placeholder="Password" required></label><br>
+                <label> User Type:</label>
+                <label><input type="radio" name="userType" value="Interior Designer"> Interior Designer</label>
+                <label><input type="radio" name="userType" value="Client"> Client</label> <br>
+                <br>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    
+    <script>
+        document.getElementById('clientForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var userType = document.querySelector('input[name="userType"]:checked').value;
+            var formAction = '';
+            if (userType === 'Client') {
+                formAction = 'clienthomepage.php';
+            } else if (userType === 'Interior Designer') {
+                formAction = 'Designer.php';
+            }
+            this.action = formAction;
+            this.submit();
+        });
+    </script>
+</body>
+</html>

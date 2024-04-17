@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+  <title>Sign Up Page</title>
+    <link rel="stylesheet" href="css/Homepage.css">
+    <!--<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <img src="images/logo1.png" alt="Logo" width="150" height="100">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</header>
+
+<body>
+  <p class="S2">Sign up</p>
+
+  <div class="S3">
+    <label> User Type:</label>
+    <label><input type="radio" name="userType" value="Interior Designer" onclick="toggleForm()"> Interior Designer</label>
+    <label><input type="radio" name="userType" value="Client" onclick="toggleForm()"> Client</label>
+
+    <!-- Designer Form -->
+    <form action="designerSignup.php?type=designer" method="post" id="designerForm" style="display: none;" enctype="multipart/form-data">
+
+
+      <fieldset>
+        <label><input type="text" name="firstName" class="S4" placeholder="First Name" required></label>
+        <label><input type="text" name="lastName" class="S4" placeholder="Last Name" required></label><br>
+        <label><input type="email" name="email" class="S4" placeholder="Email Address" required></label><br>
+        <label><input type="password" name="password" class="S4" placeholder="Password" required></label><br>
+          <label><input type="text" name="brandName" class="S4" placeholder="Brand Name" id="brandName"></label><br>
+          <label><input type="file" name="brandLogo" class="S4" placeholder="Brand Logo" id="brandLogo"></label><br>
+          <label>Design categories:</label>
+          <label><input type="checkbox" name="categories[]" value="Modern">Modern</label><br>
+          <label><input type="checkbox" name="categories[]" value="Country">Country</label><br>
+          <label><input type="checkbox" name="categories[]" value="Coastal">Coastal</label><br>
+          <label><input type="checkbox" name="categories[]" value="Bohemian">Bohemian</label><br>
+          <label><input type="checkbox" name="categories[]" value="Traditional">Traditional</label><br>
+          <label><input type="checkbox" name="categories[]" value="Scandinavian">Scandinavian</label><br>
+          <label><input type="checkbox" name="categories[]" value="Asian Inspired">Asian Inspired</label><br>
+
+
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+
+    <!-- Client Form -->
+    <form action="clientSignup.php?type=client" method="post" id="clientForm" style="display: none;">
+
+      <fieldset>
+        <label><input type="text" name="firstName" class="S4" placeholder="First Name" required></label>
+        <label><input type="text" name="lastName" class="S4" placeholder="Last Name" required></label><br>
+        <label><input type="email" name="email" class="S4" placeholder="Email Address" required></label><br>
+        <label><input type="password" name="password" class="S4" placeholder="Password" required></label><br>
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+
+  <script>
+    function toggleForm() {
+      var userType = document.querySelector('input[name="userType"]:checked').value;
+      var designerForm = document.getElementById('designerForm');
+      var clientForm = document.getElementById('clientForm');
+
+      if (userType === 'Interior Designer') {
+        designerForm.style.display = 'block';
+        clientForm.style.display = 'none';
+      } else {
+        designerForm.style.display = 'none';
+        clientForm.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
