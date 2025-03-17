@@ -1,2 +1,2 @@
 # DECOVA
- We are working on Phase 2 from WEB 2
+DECOVA is a web-based platform that connects interior designers and individuals looking to create or renovate spaces in one seamless environment. The platform provides users with tools to explore design inspirations, collaborate with professional designers, and manage projects efficiently. Whether for homeowners seeking expert advice or designers looking to showcase their work, DECOVA serves as an all-in-one solution for interior design planning and execution.
